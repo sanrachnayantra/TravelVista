@@ -1,0 +1,682 @@
+
+/*-----------------------------------------Styling that applies on whole website---------------------------------------------------------- */
+
+:root{
+     --green : #00c04b;            
+    --black : #080808;
+    --white : #fff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 1s ease;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding:1rem;
+    margin:2rem 0;
+    background: rgba(51, 255, 58, 0.05);
+} 
+
+.heading span{
+    color: var(--green);
+}
+
+
+/*------------------------------------------------------------(HOME SECTION STYLING STARTS)---------------------------------------------------- */
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(background-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .homecontent{
+    max-width: 50rem;
+}
+
+.home .homecontent h1{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.home .homecontent span{
+    color: var(--green);
+}
+
+.home .explore-btn {
+    margin-left: -5rem;
+    display: inline-block;
+    position: relative;
+    left: 3rem;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    background: var(--black);
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+
+}
+
+
+.home .explore-btn:hover {
+    background-color: var(--green);
+    transition: .1s ease;
+    transform: scale(1.1);
+    letter-spacing: .5rem;
+}
+
+.home .homecontent p{
+        font-size: 1.5rem;
+        color: #999;
+        padding: 1rem 0;
+        line-height: 1.5;
+}
+
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #050505;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display:none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    font-size: 4rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+header .logo span {
+    color: var(--green);
+
+}
+
+.home .homecontent p{
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: bold;
+}
+
+header .navbar {
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: var(--black);
+}
+
+header .navbar a{
+    color: var(--black);
+    margin: 2.5rem;
+    
+}
+
+header .navbar a:hover {
+    color: var(--green);
+    transition: .1s ease;
+    font-size: 2.5rem;
+}
+
+header .icons .fa-bookmark{
+    margin: .5rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-left: 1.5rem;
+    transition: .1s ease;
+}
+
+header .icons .fa-share-nodes{
+    margin: .5rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-left: 1.5rem;
+    transition: .1s ease;
+}
+
+header .icons .fa-bookmark:hover{
+    color: var(--green);
+    transform: scale(1.1);
+}
+
+header .icons .signup{
+    text-decoration: none;
+    color: var(--black);
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 1.2rem 3rem;
+    border: .2rem solid var(--green);
+    transition: .1s;
+
+}
+
+header .icons .signup:hover{
+    background-color: var(--green);
+    transform: scale(1.1);
+}
+
+header .icons .fa-share-nodes:hover{
+    color: var(--green);
+    transform: scale(1.1);
+}
+
+
+
+
+
+/*------------------------------------------------(HOME SECTION STYLING ENDS)----------------------------------------------------------------  */
+
+
+/*------------------------------------------------(ABOUT SECTION STYLING STARTS)-------------------------------------------------------------- */
+
+.about .content{
+    flex: 1 1 40rem;
+
+}
+
+.about .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+
+.about .learn-btn {
+    display: inline-block;
+    position: relative;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    background: var(--black);
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+
+}
+
+
+.about .learn-btn:hover {
+    background-color: var(--green);
+    transition: .1s ease;
+    transform: scale(1.1);
+    letter-spacing: .5rem;
+}
+
+/*----------------------------------------------------(ABOUT SECTION STYLING ENDS)---------------------------------------------------- */
+
+
+
+
+/*----------------------------------------------------(LOCATIONS SECTION STYLING STARTS)---------------------------------------------------- */
+
+ .locations-container{
+    width: 100%;
+    height: 100rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(https://static.euronews.com/articles/stories/05/36/83/90/1440x810_cmsv2_6187d843-7037-5073-92f1-c3a894a93ba2-5368390.jpg);
+    flex-wrap: wrap;
+    background-position:center ;
+    background-size: cover;
+    margin:10px;
+    gap:1.5;
+}
+
+.location{
+    display: inline;
+    text-align: center;
+    margin: 1.5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.945);
+}
+.location:hover{
+    transition: .1s ease;
+    transform: scale(1.1);
+    flex-wrap: wrap;
+}
+
+.location h2{
+    color: var(--black);
+    font-size: 3.5rem;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    background-color: var(--green);
+}
+.location a{
+    width: 100%;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    background-color: var(--white);
+    padding: 1rem 2rem;
+}
+ .location a:hover{
+    background-color: var(--green);
+    transition: .1s ease;
+    transform: scale(1.1);
+    letter-spacing: .3rem;
+ }
+
+
+
+/*----------------------------------------------------(LOCATIONS SECTION STYLING ENDS)---------------------------------------------------- */
+
+
+
+/*----------------------------------------------------(CONTACT SECTION STYLING STARTS)---------------------------------------------------- */
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.945);
+    border: 1rem solid rgba(0, 0, 0, .1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.contact .row .image{
+    flex: 1 1 40rem;
+    
+}
+
+.contact .row .image img{
+    width: 100%;
+    
+}
+
+.contact .row form .box{
+    padding:  1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    margin: .7rem  0;
+    width: 100%;
+}
+
+.contact .row form .box:focus{
+    border-color: var(--blue);
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row form .btn{
+    display: inline-block;
+    position: relative;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    background: var(--black);
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+
+}
+
+.contact .row form .btn:hover{
+    background-color: var(--green);
+    transition: .1s ease;
+    transform: scale(1.1);
+    letter-spacing: .3rem;
+}
+
+
+
+
+/*----------------------------------------------------(CONTACT SECTION STYLING ENDS)---------------------------------------------------- */
+
+
+
+
+/*----------------------------------------------------(footer SECTION STYLING ENDS)---------------------------------------------------- */
+
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3{
+    color:#333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+
+.footer .box-container .box a{
+    display: block;
+    color:#666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    transition: .1s;
+}
+
+.footer .box-container .infobox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .infobox .ibox{
+    flex: 1 1 25rem;
+}
+
+
+.footer .box-container .infobox .ibox h3{
+    color:#333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+
+.footer .box-container .infobox .ibox a{
+    display: block;
+    color:#666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    transition: .1s;
+}
+
+
+.footer .box-container .box a:hover{
+    color: var(--green);
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.footer .box-container .infobox .ibox img{
+    margin-top: 1rem;
+    width: 20rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top:1.5rem ;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #080808;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+.footer .credit span{
+    color: var(--green);
+}
+
+
+
+
+
+
+
+
+/*----------------------------------------------------(footer SECTION STYLING ENDS)---------------------------------------------------- 
+
+
+
+/*------------------------------------------------------------------MEDIA QUERIES-------------------------------------------------------- */
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+}
+
+
+@media (max-width:768px) {
+
+    header .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        display:block;
+    }
+    .locations-container{
+        width: 100%;
+        height: 300rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(https://static.euronews.com/articles/stories/05/36/83/90/1440x810_cmsv2_6187d843-7037-5073-92f1-c3a894a93ba2-5368390.jpg);
+        flex-wrap: wrap;
+        background-position:center ;
+        background-size: cover;
+        margin:10px;
+        gap:1.5;
+    }
+
+    header #toggler:checked~.navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
+    .home .homecontent h1{ 
+        font-size: 5rem;
+    }
+    
+    .home .homecontent span{ 
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+}
+
+/*Blog*/
+
+.Bloghead{
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    padding: 2rem;
+    margin-top: 12rem;
+    margin-bottom: -10rem;
+    background: rgba(51, 255, 58, 0.05);
+} 
+#blog-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8vw;
+}
+
+#blog-container .blogs {
+    width: 60%;
+}
+
+#blog-container .blogs img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#blog-container .blogs .post {
+    margin-bottom: 60px;
+}
+
+#blog-container .blogs .post h3 {
+    color: #29303b;
+    padding: 15px 0 10px 0;
+}
+
+#blog-container .blogs .post p {
+    color: #29303b;
+    padding: 20px;
+    font-size:2rem;
+}
+
+#blog-container .blogs .post a {
+    color: #fff;
+    background-color: rgb(21, 21, 100);
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 13px 35px;
+    border-radius: 5px;
+}
+
+#blog-container .cate {
+    width: 30%;
+}
+
+#blog-container .cate h2 {
+    padding-bottom: 7px;
+}
+
+#blog-container .cate a {
+    text-decoration: none;
+    color: #757373;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+#blog-container .blogpost {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#blog-container .blogpost p {
+    text-align: justify;
+    padding-bottom: 60px !important;
+}
+@media (max-width: 768px) {
+    #blog-container {
+        padding: 8vw 4vw;
+    }
+
+    #blog-container .blogpost {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #blog-container .blogpost img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 475px) {
+    #blog-container {
+        flex-direction: column;
+    }
+
+    #blog-container .blogs {
+        width: 100%;
+    }
+
+    #blog-container .blogpost {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    #blog-container .blogpost {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    #blog-container .blogpost img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
